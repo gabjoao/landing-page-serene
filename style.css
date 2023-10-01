@@ -75,19 +75,7 @@ header .hamburger{
         opacity: 0;
     }
 
-    .navList li:nth-child(1) li{
-        transition: 0.5s 0.2s;
-    }
-    .navList li:nth-child(2) li{
-        transition: 0.5s 0.4s;
-    }
-    .navList li:nth-child(3) li{
-        transition: 0.5s 0.6s;
-    }
-    .navList li:nth-child(4) li{
-        transition: 0.5s 0.8s;
-    }
-    
+
     .nav.active .navList{
         clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
@@ -587,4 +575,169 @@ header .menuIcon:hover, .icones img:hover{
 
 #radio4:checked ~ .navAuto .autoBtn4{
     background-color: #9A8A37;
+}
+
+/*Sect 3 - Feedbacks*/
+
+#pg3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+}
+
+#pg3 h1{
+    width: 590px;
+    height: 62px;
+    color: #25213F;
+    text-align: center;
+    font-family: Jost;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 32px */
+    letter-spacing: 2.72px;
+    margin-bottom: 25px;
+
+}
+
+#pg3 .container{
+    width: 1360px;
+    height: 551px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FEF4C3;
+    box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+#pg3 .container .cards{
+    width: 1360px;
+    height: 551px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#pg3 .card{
+    width: 290px;
+    height: 400px;
+    border-radius: 20px;
+    background: #F2F4FF;
+    box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+
+.card .perfilTxts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card h2{
+    width: 118px;
+    height: 30px;
+    color: #25213F;
+    text-align: center;
+    text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.25);
+    font-family: Jost;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 20px */
+    letter-spacing: 1.7px;
+}
+
+.card h3{
+    width: 129px;
+    height: 28px;
+    color: #25213F;
+    text-align: center;
+    font-family: Jost;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 14px */
+    letter-spacing: 1.19px;
+}
+
+.card p{
+    margin-top: 25px;
+    width: 252px;
+    height: 156px;
+    color: #25213F;
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 16px */
+    letter-spacing: 1.36px;
+}
+
+.estrelas img{
+    width: 25px;
+    height: 25px;
+    
+}
+
+#pg3 picture{
+    width: 61px;
+    height: 73px;
+    border-radius: 30px;
+    box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  
+    overflow: hidden;
+}
+
+#card1 picture div{
+    background: url("./media/perfil1.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 61px;
+    height: 73px;
+
+}
+
+#card2 picture div{
+    background: url("./media/perfil2.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 61px;
+    height: 73px;
+    margin-left: 2px;
+
+    
+
+}
+
+#card3 picture div{
+    background: url("./media/perfil3.jpg");
+    background-size: cover;
+    background-position: left;
+    width: 61px;
+    height: 73px;
+  
+}
+
+.card{
+    transition-property: all;
+    transition-duration: .5s;
+    transition-delay: 0.2s;
+    cursor: default;
+}
+
+
+.card:hover{
+    transform: scale(110%);
 }
