@@ -21,9 +21,7 @@ header{
     height: 107px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 5%;
-    padding-right: 5%;
+    justify-content: space-around;
     position: sticky;
     top: 0;
     z-index: 1; 
@@ -296,7 +294,7 @@ header .menuIcon:hover, .icones img:hover{
 .content2{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 20px;
 }
