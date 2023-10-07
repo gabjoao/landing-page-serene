@@ -15,6 +15,34 @@ html {
     
   }
 
+.main{
+    display: none;
+}
+
+.loadContent{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pre{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: 
+      radial-gradient(farthest-side,#9A8A37 94%,#0000) top/8px 8px no-repeat,
+      conic-gradient(#0000 30%,#9A8A37);
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+    animation: load 1s infinite linear;
+
+}
+  
+@keyframes load{ 
+    100%{transform: rotate(1turn)}
+}
 
 header{
     width: 100%;

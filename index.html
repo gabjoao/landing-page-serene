@@ -8,268 +8,282 @@
     <script defer src="slider.js"></script>
     <script defer src="menu.js"></script>
 
+    <script>
+        function loading(){
+        document.getElementsByClassName("loadContent")[0].style.display="none";
+    
+        document.getElementsByClassName("main")[0].style.display="block";
+    }
+</script>
+
     <title>Serene</title>
 </head>
-<body>
-    <header>
-        <nav class="nav">
-            <button class="hamburger"></button>
-            <ul class="navList">
-                <a href="#">
-                    <li>Home</li>
-                </a>
-                <a href="#pg2">
-                    <li>Sobre</li>
-                </a>
-                <a href="#pg3">
-                    <li>Feedbacks</li>
-                </a>
-                <a href="#pg4">
-                    <li>Contato</li>
-                </a>
-            </ul>
-        </nav>
 
-        <div class="logo">
-            <h1>SERENE</h1>
-            <img src="./media/sol.png" alt="">
-        </div>
-       
-
-
-        <div class="icones">
-            <img src="./media/perfil.png" alt="">
-            <img src="./media/carrinho.png" alt="">
-        </div>
-    </header>
-
-    <section id="pg1">
-
-        <div class="content1">
-            <p class="slogan">
-                o caminho para a 
-                <font color="FCEEA8">serenidade</font> da sua pele  
-              </p>
-              
-
-              <div class="infoContainer">
-                <div class="infos">
-            
-                    <picture class="frete">
-        
-                        <img src="./media/frete.png" alt="">
-                        <p>frete <font color="FCEEA8">grátis</font> </p>
-        
-                    </picture>
-                        
-                    <picture class="atendimento">
-        
-                        <img src="./media/celular.png" alt="">
-                        <p>atendimento <font color="FCEEA8">24h</font></p>
-        
-                    </picture>
-                </div>
-              </div>
-              
-        </div>
-        
-        <div class="content2">
-
-            <p class="CTA">conheça os nossos produtos</p>
-
-            <a href="#pg2">
-                <p class="seta">^</p>
-            </a>
-         
+<body onLoad="loading()">
+    <div class="loadContent">
+        <div class="pre"></div>
+    </div>
+   
+    <main class="main">
+        <header>
+            <nav class="nav">
+                <button class="hamburger"></button>
+                <ul class="navList">
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#pg2">
+                        <li>Sobre</li>
+                    </a>
+                    <a href="#pg3">
+                        <li>Feedbacks</li>
+                    </a>
+                    <a href="#pg4">
+                        <li>Contato</li>
+                    </a>
+                </ul>
+            </nav>
     
-            <div class="desconto">
-                <img src="./media/desconto.png" alt="">
-                <p>25% OFF na primeira compra</p>
-    
+            <div class="logo">
+                <h1>SERENE</h1>
+                <img src="./media/sol.png" alt="">
             </div>
+           
     
-        </div>
-    </section>
-
-    <section id="pg2">
-
-        <div class="texts">
-            <div class="texts1">
-                <p>a</p>
+    
+            <div class="icones">
+                <img src="./media/perfil.png" alt="">
+                <img src="./media/carrinho.png" alt="">
+            </div>
+        </header>
+    
+        <section id="pg1">
+    
+            <div class="content1">
+                <p class="slogan">
+                    o caminho para a 
+                    <font color="FCEEA8">serenidade</font> da sua pele  
+                  </p>
+                  
+    
+                  <div class="infoContainer">
+                    <div class="infos">
+                
+                        <picture class="frete">
+            
+                            <img src="./media/frete.png" alt="">
+                            <p>frete <font color="FCEEA8">grátis</font> </p>
+            
+                        </picture>
+                            
+                        <picture class="atendimento">
+            
+                            <img src="./media/celular.png" alt="">
+                            <p>atendimento <font color="FCEEA8">24h</font></p>
+            
+                        </picture>
+                    </div>
+                  </div>
+                  
+            </div>
+            
+            <div class="content2">
+    
+                <p class="CTA">conheça os nossos produtos</p>
+    
+                <a href="#pg2">
+                    <p class="seta">^</p>
+                </a>
+             
+        
+                <div class="desconto">
+                    <img src="./media/desconto.png" alt="">
+                    <p>25% OFF na primeira compra</p>
+        
+                </div>
+        
+            </div>
+        </section>
+    
+        <section id="pg2">
+    
+            <div class="texts">
+                <div class="texts1">
+                    <p>a</p>
+                    <div class="logo">
+                        <h4>SERENE</h4>
+                        <img src="./media/sol.png" alt="">
+                    </div>
+                </div>
+                
+                <p id="textContent">é a escolha preferida dos dermatologistas em todo o mundo, com mais de duas décadas de excelência no mercado. Nossas fórmulas eficazes oferecem resultados notáveis para a sua pele</p>
+            </div>
+            
+    
+            <div class="sliderContainer">
+                <div class="slider">
+    
+                        <div class="slides">
+                            <!--Botões de troca de slide-->
+                            <input type="radio" name="radioBtn" id="radio1">
+                            <input type="radio" name="radioBtn" id="radio2">
+                            <input type="radio" name="radioBtn" id="radio3">
+                            <input type="radio" name="radioBtn" id="radio4">
+    
+                            <!--Imagens do slider-->
+                            <div class="slide1">
+                                <img src="./media/produto1.jpg" alt="">
+                            </div>
+    
+                            <div class="slide">
+                                <img src="./media/produto2.jpg" alt="">
+                            </div>
+    
+                            <div class="slide">
+                                <img src="./media/produto3.jpg" alt="">
+                            </div>
+    
+                            <div class="slide">
+                                <img src="./media/produto4.jpg" alt="">
+                            </div>
+    
+                            <div class="navAuto">
+                                <div class="autoBtn1"></div>
+                                <div class="autoBtn2"></div>
+                                <div class="autoBtn3"></div>
+                                <div class="autoBtn4"></div>
+                            </div>
+    
+                        </div>
+    
+                        <div class="navManual">
+                            <label for="radio1" class="manualBtn"></label>
+                            <label for="radio2" class="manualBtn"></label>
+                            <label for="radio3" class="manualBtn"></label>
+                            <label for="radio4" class="manualBtn"></label>
+                        </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="pg3">
+            <h1>Nos acompanhe nas redes sociais e veja o que estão falando!</h1>
+    
+            <div class="container">
+                <div class="cards">
+                        
+                <div class="card" id="card1">
+                    <div class="perfil">
+                        <picture>
+                         <div></div>
+                        </picture>
+                        
+                        <div class="perfilTxts">
+                            <h2>@gabjoaoz</h2>
+                            <h3>Cliente com pele seca</h3>
+                        </div>    
+                    </div>
+                   
+    
+                    <p>“Estou absolutamente apaixonado pelos produtos Serene! Minha pele nunca esteve tão radiante e saudável. As fórmulas são incríveis e fazem uma grande diferença. Uso há meses e continuo impressionado com os resultados.”</p>
+    
+                    <div class="estrelas">
+                        <img src="./media/estrela.png" alt="">
+                        <img src="./media/estrela.png" alt="">
+                        <img src="./media/estrela.png" alt="">
+                        <img src="./media/estrela.png" alt="">
+                        <img src="./media/estrela.png" alt="">
+                    </div>
+                </div>
+    
+                <div class="card" id="card2">
+                    <div class="perfil">
+                        <picture>
+                            <div></div>
+                        </picture>
+                        
+                        <div class="perfilTxts">
+                            <h2>@maxm3</h2>
+                            <h3>Cliente com pele sensível</h3>
+                        </div>    
+                    </div>
+                   
+                    <p>“Tenho pele sensível e sempre tive medo de experimentar novos produtos. Mas a linha Serene é tão gentil com a minha pele. Não tive nenhuma reação adversa, apenas uma melhoria notável na textura e no tom da minha pele.”</p>
+    
+                    <div class="estrelas">
+                        <img src="./media/estrela.png" alt="">
+                        <img src="./media/estrela.png" alt="">
+                        <img src="./media/estrela.png" alt="">
+                        <img src="./media/estrela.png" alt="">
+                        <img src="./media/estrela2.png" alt="">
+                    </div>
+                </div>
+    
+                <div class="card" id="card3">
+                    <div class="perfil">
+                        <picture>
+                            <div></div>
+                        </picture>
+                        
+                        <div class="perfilTxts">
+                            <h2>@marineusa15</h2>
+                            <h3>Cliente com pele madura</h3>
+                        </div>    
+                    </div>
+                   
+    
+                    <p>"Sou uma cliente fiel da Serene há anos. Esses produtos são meu segredo de beleza. Não trocaria por nada. Eles mantêm minha pele jovem e saudável.”</p>
+    
+                    <div class="estrelas">
+                        <img src="./media/estrela.png" alt="">
+                        <img src="./media/estrela.png" alt="">
+                        <img src="./media/estrela.png" alt="">
+                        <img src="./media/estrela.png" alt="">
+                        <img src="./media/estrela.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="pg4">
+            <h1>Siga @sereneskin</h1>
+            <div class="iconsContainer">
+                <img src="./media/instagram.png" alt="" id="instagram">
+                <img src="./media/github.png" alt="" id="github"> 
+                <img src="./media/linkedin.png" alt="" id="linkedin">
+                <img src="./media/gmail.png" alt="" id="gmail">
+            </div>
+            <div class="linha">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1112" height="12" viewBox="0 0 1112 12" fill="none">
+                    <path d="M0.223262 5.8916L5.99677 11.6651L11.7703 5.8916L5.99677 0.118099L0.223262 5.8916ZM1111.77 5.8916L1106 0.118099L1100.22 5.8916L1106 11.6651L1111.77 5.8916ZM5.99677 6.8916H1106V4.8916H5.99677V6.8916Z" fill="#25213F"/>
+                  </svg>
+            </div>
+        </section>
+    
+        <footer>
+            <h3>Problemas?
+                Entre em contato com a central de ajuda!
+               centraldeajuda@serene
+               (42) 555-2302</h3>
+    
+               <div class="content1">
                 <div class="logo">
                     <h4>SERENE</h4>
                     <img src="./media/sol.png" alt="">
                 </div>
-            </div>
-            
-            <p id="textContent">é a escolha preferida dos dermatologistas em todo o mundo, com mais de duas décadas de excelência no mercado. Nossas fórmulas eficazes oferecem resultados notáveis para a sua pele</p>
-        </div>
-        
-
-        <div class="sliderContainer">
-            <div class="slider">
-
-                    <div class="slides">
-                        <!--Botões de troca de slide-->
-                        <input type="radio" name="radioBtn" id="radio1">
-                        <input type="radio" name="radioBtn" id="radio2">
-                        <input type="radio" name="radioBtn" id="radio3">
-                        <input type="radio" name="radioBtn" id="radio4">
-
-                        <!--Imagens do slider-->
-                        <div class="slide1">
-                            <img src="./media/produto1.jpg" alt="">
-                        </div>
-
-                        <div class="slide">
-                            <img src="./media/produto2.jpg" alt="">
-                        </div>
-
-                        <div class="slide">
-                            <img src="./media/produto3.jpg" alt="">
-                        </div>
-
-                        <div class="slide">
-                            <img src="./media/produto4.jpg" alt="">
-                        </div>
-
-                        <div class="navAuto">
-                            <div class="autoBtn1"></div>
-                            <div class="autoBtn2"></div>
-                            <div class="autoBtn3"></div>
-                            <div class="autoBtn4"></div>
-                        </div>
-
-                    </div>
-
-                    <div class="navManual">
-                        <label for="radio1" class="manualBtn"></label>
-                        <label for="radio2" class="manualBtn"></label>
-                        <label for="radio3" class="manualBtn"></label>
-                        <label for="radio4" class="manualBtn"></label>
-                    </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="pg3">
-        <h1>Nos acompanhe nas redes sociais e veja o que estão falando!</h1>
-
-        <div class="container">
-            <div class="cards">
-                    
-            <div class="card" id="card1">
-                <div class="perfil">
-                    <picture>
-                     <div></div>
-                    </picture>
-                    
-                    <div class="perfilTxts">
-                        <h2>@gabjoaoz</h2>
-                        <h3>Cliente com pele seca</h3>
-                    </div>    
-                </div>
-               
-
-                <p>“Estou absolutamente apaixonado pelos produtos Serene! Minha pele nunca esteve tão radiante e saudável. As fórmulas são incríveis e fazem uma grande diferença. Uso há meses e continuo impressionado com os resultados.”</p>
-
-                <div class="estrelas">
-                    <img src="./media/estrela.png" alt="">
-                    <img src="./media/estrela.png" alt="">
-                    <img src="./media/estrela.png" alt="">
-                    <img src="./media/estrela.png" alt="">
-                    <img src="./media/estrela.png" alt="">
-                </div>
-            </div>
-
-            <div class="card" id="card2">
-                <div class="perfil">
-                    <picture>
-                        <div></div>
-                    </picture>
-                    
-                    <div class="perfilTxts">
-                        <h2>@maxm3</h2>
-                        <h3>Cliente com pele sensível</h3>
-                    </div>    
-                </div>
-               
-                <p>“Tenho pele sensível e sempre tive medo de experimentar novos produtos. Mas a linha Serene é tão gentil com a minha pele. Não tive nenhuma reação adversa, apenas uma melhoria notável na textura e no tom da minha pele.”</p>
-
-                <div class="estrelas">
-                    <img src="./media/estrela.png" alt="">
-                    <img src="./media/estrela.png" alt="">
-                    <img src="./media/estrela.png" alt="">
-                    <img src="./media/estrela.png" alt="">
-                    <img src="./media/estrela2.png" alt="">
-                </div>
-            </div>
-
-            <div class="card" id="card3">
-                <div class="perfil">
-                    <picture>
-                        <div></div>
-                    </picture>
-                    
-                    <div class="perfilTxts">
-                        <h2>@marineusa15</h2>
-                        <h3>Cliente com pele madura</h3>
-                    </div>    
-                </div>
-               
-
-                <p>"Sou uma cliente fiel da Serene há anos. Esses produtos são meu segredo de beleza. Não trocaria por nada. Eles mantêm minha pele jovem e saudável.”</p>
-
-                <div class="estrelas">
-                    <img src="./media/estrela.png" alt="">
-                    <img src="./media/estrela.png" alt="">
-                    <img src="./media/estrela.png" alt="">
-                    <img src="./media/estrela.png" alt="">
-                    <img src="./media/estrela.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="pg4">
-        <h1>Siga @sereneskin</h1>
-        <div class="iconsContainer">
-            <img src="./media/instagram.png" alt="" id="instagram">
-            <img src="./media/github.png" alt="" id="github"> 
-            <img src="./media/linkedin.png" alt="" id="linkedin">
-            <img src="./media/gmail.png" alt="" id="gmail">
-        </div>
-        <div class="linha">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1112" height="12" viewBox="0 0 1112 12" fill="none">
-                <path d="M0.223262 5.8916L5.99677 11.6651L11.7703 5.8916L5.99677 0.118099L0.223262 5.8916ZM1111.77 5.8916L1106 0.118099L1100.22 5.8916L1106 11.6651L1111.77 5.8916ZM5.99677 6.8916H1106V4.8916H5.99677V6.8916Z" fill="#25213F"/>
-              </svg>
-        </div>
-    </section>
-
-    <footer>
-        <h3>Problemas?
-            Entre em contato com a central de ajuda!
-           centraldeajuda@serene
-           (42) 555-2302</h3>
-
-           <div class="content1">
-            <div class="logo">
-                <h4>SERENE</h4>
-                <img src="./media/sol.png" alt="">
-            </div>
-
-            <p>é uma marca fictícia. Todos os direitos reservados &copy; João Gabriel 2023.
-                Qualquer semelhança com uma marca ou produto real é pura coincidência.</p>
-
-           </div>
-
-           <p>Crédito às imagens: https://pixabay.com/pt/ <br>
-            Crédito aos ícones: https://icons8.com.br/icons
-            <br>
-            Todos os direitos reservados.</p>
-
-
-    </footer>
-
+    
+                <p>é uma marca fictícia. Todos os direitos reservados &copy; João Gabriel 2023.
+                    Qualquer semelhança com uma marca ou produto real é pura coincidência.</p>
+    
+               </div>
+    
+               <p>Crédito às imagens: https://pixabay.com/pt/ <br>
+                Crédito aos ícones: https://icons8.com.br/icons
+                <br>
+                Todos os direitos reservados.</p>
+    
+    
+        </footer>    
+    </main>
 </body>
 </html>
