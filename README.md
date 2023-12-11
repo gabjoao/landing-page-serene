@@ -2,7 +2,7 @@
 
 Esse projeto é uma Landing Page feita para uma marca de Skin Care.
 
-A marca Serene é uma marca fictícia criada apenas com intuito de estudos. Qualquer semelhança com uma marca ou produto real é mere coincidência, todas as imagens utilizadas são meramente ilustrativas.
+A marca Serene é uma marca fictícia criada apenas com intuito de estudos. Qualquer semelhança com uma marca ou produto real é mera coincidência, todas as imagens utilizadas são meramente ilustrativas.
 
 
 ---
